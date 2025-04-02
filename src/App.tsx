@@ -3,10 +3,10 @@ import "./App.css";
 import Landingpage from "./Landingpage";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import LandingPageAgric from "./agric/src/components/LandingPage";
-import LandingPageCargo from "./cargo/src/App";
-import LandingPageProperties from "./properties/src/App";
-import LandingPageEnergy from "./energy/src/App";
+import LandingAgric from "./LandingpageAgric";
+import LandingCargo from "./LandingpageCargo";
+import LandingProperties from "./LandingpageProperties";
+import LandingEnergy from "./LandingpageEnergy";
 
 function App() {
   const ScrollToTop = () => {
@@ -25,10 +25,10 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Landingpage />} />
-          <Route path="/agric" element={<LandingPageAgric />} />
-          <Route path="/cargo" element={<LandingPageCargo />} />
-          <Route path="/properties" element={<LandingPageProperties />} />
-          <Route path="/energy" element={<LandingPageEnergy />} />
+          <Route path="/agric" element={<LandingAgric />} />
+          <Route path="/cargo" element={<LandingCargo />} />
+          <Route path="/properties" element={<LandingProperties />} />
+          <Route path="/energy" element={<LandingEnergy />} />
         </Routes>
       </Router>
     </>
