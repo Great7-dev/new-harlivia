@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Landingpage from "./Landingpage";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import LandingPageAgric from "./agric/src/components/LandingPage";
 import LandingPageCargo from "./cargo/src/App";
 import LandingPageProperties from "./properties/src/App";
 import LandingPageEnergy from "./energy/src/App";
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 function App() {
   const ScrollToTop = () => {
